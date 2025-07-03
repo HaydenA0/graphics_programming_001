@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build",
+  "command": "/sbin/c++  -I/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/include -std=gnu++17 -o CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o -c /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/main.cpp",
+  "file": "/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/main.cpp",
+  "output": "CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build",
+  "command": "/sbin/cc  -I/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/include  -o CMakeFiles/MyOpenGLApp.dir/src/glad.c.o -c /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/glad.c",
+  "file": "/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/glad.c",
+  "output": "CMakeFiles/MyOpenGLApp.dir/src/glad.c.o"
+}
+]

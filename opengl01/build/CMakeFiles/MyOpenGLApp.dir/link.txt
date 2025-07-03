@@ -1,0 +1,1 @@
+/sbin/c++ -Wl,--dependency-file=CMakeFiles/MyOpenGLApp.dir/link.d CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o CMakeFiles/MyOpenGLApp.dir/src/glad.c.o -o MyOpenGLApp  -lglfw -lGL -ldl -lpthread
