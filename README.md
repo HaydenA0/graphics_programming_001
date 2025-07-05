@@ -4,4 +4,4 @@ A simple repository showcasing what I’ve learned from two books — LearnOpenG
 
 
 ## Hello Triangle 
-![opengl01/images/triangle.png]
+![Triangle](https://github.com/HaydenA0/graphics_programming_001/blob/main/opengl01/images/triangle.png?raw=true)
