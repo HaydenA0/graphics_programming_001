@@ -1,4 +1,4 @@
-# Install script for directory: /home/anasr/Dev/C_projects/graphics_programming_001/opengl01
+# Install script for directory: /home/anasr/dev/c_projects/graphics_programming_001/opengl01
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/sbin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build/install_local_manifest.txt"
+  file(WRITE "/home/anasr/dev/c_projects/graphics_programming_001/opengl01/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/anasr/dev/c_projects/graphics_programming_001/opengl01/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

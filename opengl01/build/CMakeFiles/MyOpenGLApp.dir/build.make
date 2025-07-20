@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /sbin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /sbin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anasr/Dev/C_projects/graphics_programming_001/opengl01
+CMAKE_SOURCE_DIR = /home/anasr/dev/c_projects/graphics_programming_001/opengl01
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build
+CMAKE_BINARY_DIR = /home/anasr/dev/c_projects/graphics_programming_001/opengl01/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MyOpenGLApp.dir/depend.make
@@ -73,32 +73,32 @@ CMakeFiles/MyOpenGLApp.dir/codegen:
 .PHONY : CMakeFiles/MyOpenGLApp.dir/codegen
 
 CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o: CMakeFiles/MyOpenGLApp.dir/flags.make
-CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o: /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/main.cpp
+CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o: /home/anasr/dev/c_projects/graphics_programming_001/opengl01/src/main.cpp
 CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o: CMakeFiles/MyOpenGLApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o -MF CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o.d -o CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o -c /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anasr/dev/c_projects/graphics_programming_001/opengl01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o -MF CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o.d -o CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o -c /home/anasr/dev/c_projects/graphics_programming_001/opengl01/src/main.cpp
 
 CMakeFiles/MyOpenGLApp.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyOpenGLApp.dir/src/main.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/main.cpp > CMakeFiles/MyOpenGLApp.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anasr/dev/c_projects/graphics_programming_001/opengl01/src/main.cpp > CMakeFiles/MyOpenGLApp.dir/src/main.cpp.i
 
 CMakeFiles/MyOpenGLApp.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyOpenGLApp.dir/src/main.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/main.cpp -o CMakeFiles/MyOpenGLApp.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anasr/dev/c_projects/graphics_programming_001/opengl01/src/main.cpp -o CMakeFiles/MyOpenGLApp.dir/src/main.cpp.s
 
 CMakeFiles/MyOpenGLApp.dir/src/glad.c.o: CMakeFiles/MyOpenGLApp.dir/flags.make
-CMakeFiles/MyOpenGLApp.dir/src/glad.c.o: /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/glad.c
+CMakeFiles/MyOpenGLApp.dir/src/glad.c.o: /home/anasr/dev/c_projects/graphics_programming_001/opengl01/src/glad.c
 CMakeFiles/MyOpenGLApp.dir/src/glad.c.o: CMakeFiles/MyOpenGLApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MyOpenGLApp.dir/src/glad.c.o"
-	/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyOpenGLApp.dir/src/glad.c.o -MF CMakeFiles/MyOpenGLApp.dir/src/glad.c.o.d -o CMakeFiles/MyOpenGLApp.dir/src/glad.c.o -c /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anasr/dev/c_projects/graphics_programming_001/opengl01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MyOpenGLApp.dir/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyOpenGLApp.dir/src/glad.c.o -MF CMakeFiles/MyOpenGLApp.dir/src/glad.c.o.d -o CMakeFiles/MyOpenGLApp.dir/src/glad.c.o -c /home/anasr/dev/c_projects/graphics_programming_001/opengl01/src/glad.c
 
 CMakeFiles/MyOpenGLApp.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyOpenGLApp.dir/src/glad.c.i"
-	/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/glad.c > CMakeFiles/MyOpenGLApp.dir/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anasr/dev/c_projects/graphics_programming_001/opengl01/src/glad.c > CMakeFiles/MyOpenGLApp.dir/src/glad.c.i
 
 CMakeFiles/MyOpenGLApp.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyOpenGLApp.dir/src/glad.c.s"
-	/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/glad.c -o CMakeFiles/MyOpenGLApp.dir/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anasr/dev/c_projects/graphics_programming_001/opengl01/src/glad.c -o CMakeFiles/MyOpenGLApp.dir/src/glad.c.s
 
 # Object files for target MyOpenGLApp
 MyOpenGLApp_OBJECTS = \
@@ -113,7 +113,7 @@ MyOpenGLApp: CMakeFiles/MyOpenGLApp.dir/src/glad.c.o
 MyOpenGLApp: CMakeFiles/MyOpenGLApp.dir/build.make
 MyOpenGLApp: CMakeFiles/MyOpenGLApp.dir/compiler_depend.ts
 MyOpenGLApp: CMakeFiles/MyOpenGLApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MyOpenGLApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anasr/dev/c_projects/graphics_programming_001/opengl01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MyOpenGLApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyOpenGLApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +125,6 @@ CMakeFiles/MyOpenGLApp.dir/clean:
 .PHONY : CMakeFiles/MyOpenGLApp.dir/clean
 
 CMakeFiles/MyOpenGLApp.dir/depend:
-	cd /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anasr/Dev/C_projects/graphics_programming_001/opengl01 /home/anasr/Dev/C_projects/graphics_programming_001/opengl01 /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build /home/anasr/Dev/C_projects/graphics_programming_001/opengl01/build/CMakeFiles/MyOpenGLApp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/anasr/dev/c_projects/graphics_programming_001/opengl01/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anasr/dev/c_projects/graphics_programming_001/opengl01 /home/anasr/dev/c_projects/graphics_programming_001/opengl01 /home/anasr/dev/c_projects/graphics_programming_001/opengl01/build /home/anasr/dev/c_projects/graphics_programming_001/opengl01/build /home/anasr/dev/c_projects/graphics_programming_001/opengl01/build/CMakeFiles/MyOpenGLApp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/MyOpenGLApp.dir/depend
 

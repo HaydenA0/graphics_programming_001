@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/glad.c" "CMakeFiles/MyOpenGLApp.dir/src/glad.c.o" "gcc" "CMakeFiles/MyOpenGLApp.dir/src/glad.c.o.d"
-  "/home/anasr/Dev/C_projects/graphics_programming_001/opengl01/src/main.cpp" "CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o" "gcc" "CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o.d"
+  "/home/anasr/dev/c_projects/graphics_programming_001/opengl01/src/glad.c" "CMakeFiles/MyOpenGLApp.dir/src/glad.c.o" "gcc" "CMakeFiles/MyOpenGLApp.dir/src/glad.c.o.d"
+  "/home/anasr/dev/c_projects/graphics_programming_001/opengl01/src/main.cpp" "CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o" "gcc" "CMakeFiles/MyOpenGLApp.dir/src/main.cpp.o.d"
   "" "MyOpenGLApp" "gcc" "CMakeFiles/MyOpenGLApp.dir/link.d"
   )
 

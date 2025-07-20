@@ -1,5 +1,6 @@
 #include "glad/glad.h" // should be on top
 #include <GLFW/glfw3.h>
+#include <cstdio>
 #include <iostream>
 #define WIDTH 400
 #define HEIGHT 300
@@ -27,7 +28,6 @@ void frame_buffer_resize_callback(GLFWwindow *window, int width, int height) {
 //   OpenGL does not automatically adjust — so you must manually update its
 //  drawing area using glViewport.
 //  we didn’t ask for a new window that is why we dont need to call a new one
-
 void handle_input(GLFWwindow *window) {
   if (glfwGetKey(window, GLFW_KEY_CAPS_LOCK)) {
     glfwSetWindowShouldClose(window, true);
@@ -38,8 +38,17 @@ void handle_input(GLFWwindow *window) {
 
 int main() {
 
-  float triangle[] = {-0.5f, -0.5f, 0.0f, 0.5f, -0.5f,
-                      0.0f,  0.0f,  0.5f, 0.0f}; // x,y,z,  x,y,z,  x,y,z
+  float triangle[] = {
+
+      -0.5f, 0.5f,  0.0f, 0.5f, 0.5f,  0.0f,
+      -0.5f, -0.5f, 0.0f, 0.5f, -0.5f, 0.0f,
+
+  }; // x,y,z,  x,y,z,  x,y,z
+  unsigned int rendering_indices[] = {0, 1, 2, 1, 2, 3};
+  // instead of redrawing each triangle vertices
+  // we will tell opengl what to draw
+  // EBO
+  //
   // instead of sending vertices from the cpu to the gpu each fraim
   // we can gather them all into one big buffer and send it to the
   // GPU, it's called VBO vertex buffer object, OpenGL object
@@ -96,6 +105,11 @@ int main() {
   // GL_STATIC_DRAW means Data won’t change, used many times : const int* data
   // almost
 
+  unsigned int EBO; // id
+  glGenBuffers(1, &EBO);
+  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+  glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(rendering_indices),
+               rendering_indices, GL_STATIC_DRAW);
   // VERTEX SHADER SETUP
   unsigned int VERTEXSHADER; // create ID since it's an OpenGL Object
   VERTEXSHADER =
@@ -212,8 +226,9 @@ int main() {
     // they look at the notepad(use the state).glfwSwapBuffers(window);
 
     glUseProgram(SHADER_PROGRAM);
-    glBindVertexArray(VAO);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glBindVertexArray(VBO);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, rendering_indices);
 
     glfwSwapBuffers(window);
     // swap front buffer with back front
